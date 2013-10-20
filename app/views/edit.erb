@@ -1,0 +1,11 @@
+
+<div id="note">
+  <h2>Edit your note</h2>
+  <form method="POST" action="/<%=@edit_this_note.id%>/edit">
+    <input type="text" id="edit_note" name="title" value="<%=@edit_this_note.title%>">
+    <br/>
+    <textarea name="description"> <%=@edit_this_note.description%> </textarea>
+    <br/>
+    <button>Submit Edit</button>
+  </form>
+</div>
